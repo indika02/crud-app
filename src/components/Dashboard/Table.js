@@ -14,7 +14,7 @@ const Table = ({ employees, handleEdit, handleDelete }) => {
   return (
     <div className="contain-table">
       <table className="striped-table">
-        {/* <thead> */}
+        <thead>
           <tr>
             <th>ID.</th>
             <th>First Name</th>
