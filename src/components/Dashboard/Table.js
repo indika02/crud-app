@@ -16,7 +16,7 @@ const Table = ({ employees, handleEdit, handleDelete }) => {
       <table className="striped-table">
         <thead>
           <tr>
-            <th>No.</th>
+            <th>ID.</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
