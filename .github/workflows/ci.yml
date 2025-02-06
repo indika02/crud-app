@@ -23,12 +23,6 @@ jobs:
             - name: Build the project
               run: npm run build     
 
-        if: failure()
-        steps:
-            - name: Send slack notification
-              uses: bryannice/gitactions-slack-notification@2.0.0
-              env:
-
             - name: Login to the Docker hub
               uses: docker/login-action@v2
               with:
