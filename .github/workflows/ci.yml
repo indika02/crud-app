@@ -34,3 +34,6 @@ jobs:
 
             - name: Run docker container
               run: docker run -d -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/crud-app-new  
+            - name: Push docker image
+              run: docker push ${{ secrets.DOCKER_USERNAME }}/crud-app-new
+               
